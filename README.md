@@ -27,6 +27,8 @@ i.e.
 # cat deleteme.txt | s5cmd --endpoint-url http://<device ip> run
 ```
 
+## Usage
+
 ```
 usage: s3findbydate.py [-h] [-b BUCKET] [-p PREFIXES [PREFIXES ...]] [-s [SUFFIXES ...]] [-n LAST_MODIFIED_MIN] [-x LAST_MODIFIED_MAX] [-f FILE] [-c CMD] [-d DAYS]
                        [-e ENDPOINT_URL] [-v]
