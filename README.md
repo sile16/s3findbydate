@@ -9,11 +9,13 @@ s3findbydate.py -b mr-b1 -p "trash" -d 7 -c rm -e http://<device ip> -f deleteme
 
 Contents of file look like:
 
+```
 rm s3://mr-b1/trash/t984
 rm s3://mr-b1/trash/t985
 rm s3://mr-b1/trash/t986
 rm s3://mr-b1/trash/t987
 rm s3://mr-b1/trash/t988
+```
 
 
 Then you can use something like s5cmd to delete the object in Parallel
