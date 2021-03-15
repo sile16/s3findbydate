@@ -5,7 +5,7 @@ Based of StackOverflow Post: https://stackoverflow.com/questions/45429556/how-li
 
 ## Example
 
-lifecycleexpireobject.py -b mr-b1 -p "trash" -d 7 -c rm -e http://<device ip> -f deleteme.txt
+s3findbydate.py -b mr-b1 -p "trash" -d 7 -c rm -e http://<device ip> -f deleteme.txt
 
 Contents of file look like:
 
