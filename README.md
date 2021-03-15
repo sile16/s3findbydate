@@ -5,7 +5,9 @@ Based of StackOverflow Post: https://stackoverflow.com/questions/45429556/how-li
 
 ## Example
 
-s3findbydate.py -b mr-b1 -p "trash" -d 7 -c rm -e http://<device ip> -f deleteme.txt
+```
+# s3findbydate.py -b mr-b1 -p "trash" -d 7 -c rm -e http://<device ip> -f deleteme.txt
+```
 
 Contents of file look like:
 
@@ -20,7 +22,10 @@ rm s3://mr-b1/trash/t988
 
 Then you can use something like s5cmd to delete the object in Parallel
 i.e.
-#cat deleteme.txt | s5cmd --endpoint-url http://<device ip> run
+
+```
+# cat deleteme.txt | s5cmd --endpoint-url http://<device ip> run
+```
 
 ```
 usage: s3findbydate.py [-h] [-b BUCKET] [-p PREFIXES [PREFIXES ...]] [-s [SUFFIXES ...]] [-n LAST_MODIFIED_MIN] [-x LAST_MODIFIED_MAX] [-f FILE] [-c CMD] [-d DAYS]
